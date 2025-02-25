@@ -18,6 +18,7 @@ interface TruckType {
 }
 
 
+
 export const TrucksSection: React.FC = () => {
     const trucks: TruckType[] = [
       {
