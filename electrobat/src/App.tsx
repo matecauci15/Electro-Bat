@@ -34,6 +34,7 @@ function App() {
         </section>
       </main>
       {/* <Footer /> */}
+      {/* <Footer /> */}
     </div>
   );
 }
