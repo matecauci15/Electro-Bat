@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "homepage": "https://matecauci15.github.io/Electro-Bat/"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.9",
