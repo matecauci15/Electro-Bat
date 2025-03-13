@@ -60,9 +60,8 @@
 //     </nav>
 //   );
 // };
-
 import React, { useState, useEffect } from "react";
-import { BsLightningChargeFill } from "react-icons/bs";
+// import { BsLightningChargeFill } from "react-icons/bs";
 import ElectroBat from "./imgs/electrobat.png";
 
 export const Navbar: React.FC = () => {
@@ -112,15 +111,30 @@ export const Navbar: React.FC = () => {
     }
   };
 
+  // New function to scroll to the banner when logo is clicked
+  const scrollToBanner = () => {
+    // Assuming "features" is your banner section ID
+    const bannerElement = document.getElementById("features");
+    if (bannerElement) {
+      window.scrollTo({
+        top: bannerElement.offsetTop - 64,
+        behavior: "smooth"
+      });
+      setActiveSection("features");
+      window.history.pushState(null, "", "#features");
+    }
+  };
+
   return (
     <nav className="fixed top-0 w-full bg-gray-900 text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex items-center">
-            {/* <BsLightningChargeFill className="text-yellow-500 text-2xl mr-2" /> */}
-            {/* <span className="text-lg font-semibold">PowerDump</span> */}
-            <img src={ElectroBat} alt="" className="h-15" />
+          {/* Logo - Now clickable */}
+          <div 
+            className="flex items-center cursor-pointer" 
+            onClick={scrollToBanner}
+          >
+            <img src={ElectroBat} alt="ElectroBat" className="h-15" />
           </div>
 
           {/* Desktop Menu */}

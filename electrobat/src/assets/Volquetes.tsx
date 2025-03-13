@@ -232,7 +232,7 @@ import volquete1 from "../assets/imgs/volquete.webp";
 // import 'swiper/css/pagination';
 // import 'swiper/css/autoplay';
 
-export const TrucksSection: React.FC = () => {
+export const VolquetesSection: React.FC = () => {
   // Updated truck data with more accurate terminology
   const equipmentTypes = [
     {
