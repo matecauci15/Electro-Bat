@@ -48,13 +48,13 @@ export const Banner: React.FC = () => {
                 href="#batteries" 
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-gray-900 bg-yellow-400 hover:bg-yellow-500 transition-colors"
               >
-                <FaBatteryFull className="mr-2" /> Ver Baterías
+                <FaBatteryFull className="mr-2" /> Venta de Baterías
               </a>
               <a 
                 href="#trucks" 
                 className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-gray-800 hover:bg-gray-700 transition-colors"
               >
-                <FaTruck className="mr-2" /> Ver Volquetes
+                <FaTruck className="mr-2" /> Alquiler de Volquetes
               </a>
             </div>
           </motion.div>

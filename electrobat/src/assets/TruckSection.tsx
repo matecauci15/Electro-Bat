@@ -51,7 +51,7 @@ export const TrucksSection: React.FC = () => {
     ];
     
     return (
-      <section id="trucks" className="py-20 bg-gray-100">
+      <section id="trucks" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
